@@ -1,0 +1,8 @@
+
+tracker_type: bytetrack
+track_high_thresh: 0.3    # Lower threshold to pick up partially occluded objects
+track_low_thresh: 0.1
+new_track_thresh: 0.4
+track_buffer: 120         # Increase memory to 120 frames (allows object to be hidden behind a car for seconds and keep ID)
+match_thresh: 0.95        # Be very lenient in matching bounding boxes
+fuse_score: True          # Required parameter to prevent crash
